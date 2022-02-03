@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FootNavBar } from './footer/footnavbar';
 import { HeadNavBar } from './header/headnavbar';
+import { HomeCarousel } from './homecarousel/homecarousel';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadNavBar,
-    FootNavBar
+    FootNavBar,
+    HomeCarousel
   ],
   imports: [
     BrowserModule

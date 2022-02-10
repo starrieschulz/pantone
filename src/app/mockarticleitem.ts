@@ -13,7 +13,7 @@ export const mockarticlelist = [
         caption:"Express Yourself in Color"
     },
     {
-        image:"./assets/card1:3.png",
+        image:"./assets/card1:4.png",
         caption:"Clarity"
     }
 ];

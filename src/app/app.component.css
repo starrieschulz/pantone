@@ -1,0 +1,9 @@
+.featuredcolorarticles{
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+}
+.homebanner{
+    display: flex;
+    justify-content: center;
+}

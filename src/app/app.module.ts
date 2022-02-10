@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { FootNavBar } from './footer/footnavbar';
 import { HeadNavBar } from './header/headnavbar';
 import { HomeCarousel } from './homecarousel/homecarousel';
+import { FeaturedProduct } from './homeproductcard/featuredproduct';
+import { BannerCard } from './homebannercard/bannercard';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { HomeCarousel } from './homecarousel/homecarousel';
     AppComponent,
     HeadNavBar,
     FootNavBar,
-    HomeCarousel
+    HomeCarousel,
+    FeaturedProduct,
+    BannerCard
   ],
   imports: [
     BrowserModule

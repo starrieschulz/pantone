@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ArticleItem } from '../articleitem.model';
-import { mockarticlelist } from '../mockarticleitem';
+import { HomeArticleItem } from '../homearticleitem.model';
+import { homemockarticlelist } from '../homemockarticleitem';
+
 
 @Component({
     selector: 'home-layout',
@@ -10,11 +11,11 @@ import { mockarticlelist } from '../mockarticleitem';
 
 export class HomeLayoutComponent{
   title = 'pantone';
-  articles:ArticleItem[] = [];
+  homearticles:HomeArticleItem[] = [];
 
   constructor(){
-    for (var article of mockarticlelist){
-      this.articles.push(article);
+    for (var homearticle of homemockarticlelist){
+      this.homearticles.push(homearticle);
     }
   }
 }

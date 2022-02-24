@@ -1,1 +1,10 @@
-Past colors of the Year
+
+<div class="cotyarticles">
+    <b>Past Colors of the Year</b>
+    <div class="row"> 
+            <div class="col-3" *ngFor="let article of articles">
+            <articlecard class="cotya" image={{article.image}} caption={{article.caption}}> 
+                Loading... </articlecard>
+        </div>
+    </div>      
+</div>

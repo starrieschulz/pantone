@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ColoroftheYear } from 'src/coloroftheyear/coloroftheyear.component';
+import { ColoroftheYear } from './coloroftheyear/coloroftheyear.component';
 import { ArticlesComp } from './Articles/articles.component';
 import { BooksandPublish } from './BooksandPublish/booksandpublish.component';
 import { EventsandWeb } from './EventsandWebinars/eventsandweb.component';

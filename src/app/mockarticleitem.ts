@@ -1,19 +1,27 @@
 export const mockarticlelist = [
     {
-        image:"./assets/card1:1.png",
-        caption:"Pantone Expands Digital Color Platform, Pantone Connect, to Integrate Live Collaboration Tools and Flexibility for the New Hybrid Work Enviroment"
+        image:"./assets/coty2021.jpg",
+        caption:"Color Of The Year 2021: PANTONE 17-5104 Ultimate Gray + PANTONE 13-0647 Illuminating",
+        publishdate:"2020-12-10"
     },
     {
-        image:"./assets/card1:2.png",
-        caption:"SS22 International Runway Key Colour Highlights"
-        
+        image:"./assets/coty2020.jpg",
+        caption:"Color Of The Year 2020: PANTONE 19-4052 Classic Blue",
+        publishdate:"2019-11-14"
     },
     {
-        image:"./assets/card1:3.png",
-        caption:"Express Yourself in Color"
+        image:"./assets/coty2019.jpg",
+        caption:"Color of the Year 2019: PANTONE 16-1546 Living Coral",
+        publishdate:"2018-11-11"  
     },
     {
-        image:"./assets/card1:4.png",
-        caption:"Clarity"
+        image:"./assets/coty2018.jpg",
+        caption:"Color of the Year 2018: PANTONE 18-3838 ULTRA VIOLET",
+        publishdate:"2017-11-17"  
+    },
+    {
+        image:"./assets/coty2017.jpg",
+        caption:"Color of the Year 2017: PANTONE 15-0343 GREENERY",
+        publishdate:"2016-11-09"  
     }
 ];

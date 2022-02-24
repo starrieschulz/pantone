@@ -1,0 +1,17 @@
+CS230 Lab Assignment 4 Release Notes: 02/17/22
+Main Features:
+
+Added an app routing module to implement basic routing
+
+Added the following components and adding routing to the appropriate component from the top dropdown navigation bar
+  coloroftheyear.component
+  pastcoloroftheyear
+  homelayout
+  colortrend
+  booksandpublish.component
+  eventsandweb.component
+  colortrend
+  
+Set home layout as default route 
+
+

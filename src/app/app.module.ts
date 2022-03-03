@@ -18,6 +18,8 @@ import { HomeArticlesComp } from './Home Articles/homearticle.component';
 import { HomeArticle } from './homearticlecards/homearticlecard';
 import { Article } from './Articles/articlecard';
 import { ArticlesComp } from './Articles/articles.component';
+import { HttpClientModule } from '@angular/common/http'
+import { UserInfoComponent } from './user-info.component';
 
 
 @NgModule({
@@ -37,11 +39,13 @@ import { ArticlesComp } from './Articles/articles.component';
     HomeArticlesComp,
     HomeArticle,
     ArticlesComp,
-    Article
+    Article,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

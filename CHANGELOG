@@ -1,3 +1,34 @@
+CS230 Lab Assignment 7 Release Notes: 03/10/22
+Main Features:
+
+Moved data from mockitemarticlelist and mockhomearticlelist to backend
+  Also added all of the additional card data for homearticleitems from Pantone.com to backend
+
+Created article.service.ts to communicate with backend
+  getArticles method retrieves data of articleitem
+  getHomeArticles method retrieves data of homearticleitem
+  
+Modified homelayout and pastcoloroftheyearcomponent to retieve their card data from backend
+
+
+
+CS230 Lab Assignment 6 Release Notes: 03/02/22
+Main Features:
+
+Created a backend through firebase with the following data
+  FirstName
+  LastName
+  Github
+  MixID
+  
+Added an HttpClientModule component to connect pantone app to backend
+
+Created a component 'user-info.component' that displays the backend data above 'headnavbar'
+
+Implemented bootstrap layout for 'footnavbar' 
+  (blocks of data were previously organized with a list, the data now uses bootstrap flex layout and are set up as links)
+
+
 CS230 Lab Assignment 5 Release Notes: 02/24/22
 Main Features:
 
@@ -7,7 +38,6 @@ Created article card with the following attributes
   publishdate 
   
 Added items and text and implemented layouts for coloroftheyear and pastcoloroftheyear pages
-
 
 
 CS230 Lab Assignment 4 Release Notes: 02/17/22

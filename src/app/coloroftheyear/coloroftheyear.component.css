@@ -23,3 +23,9 @@ b{
     font-weight: bold;
     color:rgb(102, 103, 171)
 }
+
+.cotybanner{
+    display: flex;
+    justify-content: center;
+    border-style: none;
+}

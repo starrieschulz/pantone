@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ArticleItem } from "../articleitem.model";
-import { mockarticlelist } from "../mockarticleitem";
+import { ArticlesService } from "../articles.service";
 
 @Component({
     selector: 'L-pastcolorsoftheyear',
@@ -8,12 +8,18 @@ import { mockarticlelist } from "../mockarticleitem";
     styleUrls: ['pastcolorsoftheyear.css']
 })
 
-export class PastColoroftheYear{
+export class PastColoroftheYear implements OnInit{
     articles:ArticleItem[] = [];
 
-    constructor(){
-      for (var article of mockarticlelist){
+    constructor(private articlesService:ArticlesService){
+    }
+  ngOnInit(): void {
+    this.articlesService.getArticles().subscribe((data: ArticleItem []) => {
+      console.log("Fetching articles");
+      for (var article of data){
+        console.log(article);
         this.articles.push(article);
       }
-    }
+    });
+  }
 }

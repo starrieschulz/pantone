@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HomeArticleItem } from '../homearticleitem.model';
-import { homemockarticlelist } from '../homemockarticleitem';
+import { ArticlesService } from '../articles.service';
 
 
 @Component({
@@ -9,13 +9,19 @@ import { homemockarticlelist } from '../homemockarticleitem';
     styleUrls: ['./home-layout.css']
   })
 
-export class HomeLayoutComponent{
+export class HomeLayoutComponent implements OnInit{
   title = 'pantone';
   homearticles:HomeArticleItem[] = [];
 
-  constructor(){
-    for (var homearticle of homemockarticlelist){
+  constructor(private articlesService:ArticlesService){
+  }
+ngOnInit(): void {
+  this.articlesService.getHomeArticles().subscribe((data: HomeArticleItem []) => {
+    console.log("Fetching articles");
+    for (var homearticle of data){
+      console.log(homearticle);
       this.homearticles.push(homearticle);
     }
-  }
+  });
+}
 }

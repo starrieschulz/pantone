@@ -1,25 +1,22 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { ArticleItem } from "./articleitem.model";
 import { HomeArticleItem } from "./homearticleitem.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { Article } from "./Articles/articlecard";
 
 @Injectable(
     { providedIn: 'root' }
 )
 export class ArticlesService {
-    private baseUrl: string = "https://pantone-f4271-default-rtdb.firebaseio.com/";
-    private homearticlesEndPoint: string = "homearticles.json"
-    private articlesEndPoint: string = "articles.json"
-
-    constructor(private http:HttpClient){
+   
+    constructor(private db:AngularFireDatabase){
 
     }
-
     getArticles(){
-        return this.http.get<ArticleItem []>(this.baseUrl + this.articlesEndPoint);
+        return this.db.list<ArticleItem>("articles").valueChanges();
     }
     getHomeArticles(){
-        return this.http.get<HomeArticleItem []>(this.baseUrl + this.homearticlesEndPoint);
+       return this.db.list<HomeArticleItem>("homearticles").valueChanges();
     }
 
 }

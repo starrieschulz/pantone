@@ -1,3 +1,11 @@
+CS230 Lab Assignment 8 Release Notes: 03/24/22
+Main Features:
+
+Modified articles.service.ts to be dependent on AngularFireDatabase
+  article and home article data now fetched used AngularFireDatabase rather than HTTPClient
+
+Web application deployed!
+
 CS230 Lab Assignment 7 Release Notes: 03/10/22
 Main Features:
 

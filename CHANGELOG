@@ -1,3 +1,10 @@
+CS230 Lab Assignment 9 Release Notes: 03/31/22
+Main Features:
+Created add-article-component with input form
+  form accepts data for articlemodelitem that will be sent to backend under 'articles'
+
+Added path 'admin' to add-article-component
+
 CS230 Lab Assignment 8 Release Notes: 03/24/22
 Main Features:
 

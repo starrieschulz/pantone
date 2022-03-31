@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 import { ArticleItem } from "./articleitem.model";
 import { HomeArticleItem } from "./homearticleitem.model";
 import { AngularFireDatabase } from '@angular/fire/compat/database';
-import { Article } from "./Articles/articlecard";
 
 @Injectable(
     { providedIn: 'root' }
@@ -18,5 +17,7 @@ export class ArticlesService {
     getHomeArticles(){
        return this.db.list<HomeArticleItem>("homearticles").valueChanges();
     }
-
+public addArticle(article:ArticleItem){
+    this.db.list<ArticleItem>("articles").push(article);
+}
 }

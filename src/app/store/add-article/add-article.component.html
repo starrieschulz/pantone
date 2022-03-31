@@ -1,0 +1,30 @@
+<p>add-article </p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #addarticleform="ngForm" (ngSubmit)="addArticle(addarticleform.value)">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Image Path
+                    </span>
+                    <input type="text" class="form-control" ngModel name="image">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Caption
+                    </span>
+                    <input type="text" class="form-control"ngModel name="caption">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Publish Date
+                    </span>
+                    <input type="text" class="form-control" ngModel name="publishdate">
+                </div>
+                <button class="btn" type="submit"> Add Article</button>
+
+            </form>
+        </div>
+    </div>
+</div>

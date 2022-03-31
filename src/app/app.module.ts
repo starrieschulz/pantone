@@ -25,6 +25,8 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AddArticleComponent } from './store/add-article/add-article.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -45,14 +47,16 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     HomeArticle,
     ArticlesComp,
     Article,
-    UserInfoComponent
+    UserInfoComponent,
+    AddArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

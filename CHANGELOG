@@ -1,3 +1,10 @@
+CS230 Lab Assignment 10 Release Notes: 05/14/22
+Main Features:
+Added authentication component and enabled authentication service through firebase
+
+Created 'auth' path to routing module
+  Features log-in/sign-up interface with email and password (log-in data stored in firebase authentication)
+
 CS230 Lab Assignment 9 Release Notes: 03/31/22
 Main Features:
 Created add-article-component with input form

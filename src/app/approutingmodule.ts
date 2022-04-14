@@ -9,6 +9,7 @@ import { ColorTrendReport } from './FashionColorTrendReport/colortrend.component
 import { HomeLayoutComponent } from './home-layout/home-layout';
 import { PastColoroftheYear } from './PastColorsoftheYear/pastcolorsoftheyear';
 import { AddArticleComponent } from './store/add-article/add-article.component';
+import { AuthenticaitonComponent } from './auth/authenticaiton/authenticaiton.component';
 
 
 const routes:Routes = [
@@ -20,7 +21,8 @@ const routes:Routes = [
     {path:'ColorTrendReport', component: ColorTrendReport},
     {path: 'BooksandPublications', component: BooksandPublish},
     {path: 'Articles', component: ArticlesComp},
-    {path: 'admin', component:AddArticleComponent}
+    {path: 'admin', component:AddArticleComponent},
+    {path:'auth', component:AuthenticaitonComponent}
 ];
 
 @NgModule({

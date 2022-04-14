@@ -27,6 +27,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddArticleComponent } from './store/add-article/add-article.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticaitonComponent } from './auth/authenticaiton/authenticaiton.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { FormsModule } from '@angular/forms';
     ArticlesComp,
     Article,
     UserInfoComponent,
-    AddArticleComponent
+    AddArticleComponent,
+    AuthenticaitonComponent
   ],
   imports: [
     BrowserModule,
